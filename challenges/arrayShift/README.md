@@ -10,5 +10,11 @@ It is a function called insertShiftArray which takes in an array and the value t
 
 ### Big O time O(n)
 
+### Unit Tests
+def test_should_insert_sheft_array(array,value):
+    expected = [1,2,3,4,5]
+    actual = insertShiftArray([1,2,4,5],3)
+    assert expected is actual, "insertShiftArray of [1,2,4,5] and 3 should be [1,2,3,4,5]"
+
 ### Solution
 ![Sheft Array](../../assets/challenge2.jpeg)
