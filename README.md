@@ -2,4 +2,4 @@
 
 | Code Challenge | Link |
 | -------------- | ---- |
-| Array Reverse | [class-01](challenges/arrayReverse/array-reverse.js) |
+| Array Reverse | [class-01](challenges/arrayReverse) |
