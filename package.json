@@ -4,7 +4,8 @@
   "description": "| Code Challenge | Link |\r | -------------- | ---- |\r | Array Reverse | [class-01](challenges/arrayReverse) |",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/issues"
   },
-  "homepage": "https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms#readme"
+  "homepage": "https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms#readme",
+  "dependencies": {
+    "jest": "^26.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  }
 }
