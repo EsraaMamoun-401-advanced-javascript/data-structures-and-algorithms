@@ -31,11 +31,11 @@ describe('Linked List Module', () => {
     console.log('current theList includes()', theList);
   });
 
-  let arrayToTestTypes = [1, 'any string', {}, null, true];
+  let arrayToTestTypes = [1, 'any string', {}, true];
 
   arrayToTestTypes.forEach(value => {
   
-    it('toString() to make any type as string', () => {
+    it(`toString() to make ${typeof(value)} as string`, () => {
       let theList = new LinkedList;
       let val = value;
       theList.toString(val);
@@ -44,4 +44,31 @@ describe('Linked List Module', () => {
 
   });
 
+  it(' append() to add new value in the end', () => {
+    let theList = new LinkedList;
+    let value = 'test';
+    theList.append(value);
+    theList.append(5);
+    expect(theList).toEqual({'head': {'next': {'next': null, 'vlaue': 5}, 'vlaue': 'test'}});
+  });
+
+  it('insertBefore() to insert new value before any value we target it', () => {
+    let theList = new LinkedList;
+    let firstVal = 'test1';
+    let secondVal = 'test2';
+    theList.append(firstVal);
+    theList.append(secondVal);
+    theList.insertBefore(firstVal, secondVal);
+    expect(theList.head).toEqual({'next': {'next': null, 'vlaue': 'test2'}, 'vlaue': 'test1'});
+  });
+
+  it('insertAfter() to insert new value after any value we target it', () => {
+    let theList = new LinkedList;
+    let firstVal = 'test1';
+    let secondVal = 'test2';
+    theList.append(secondVal);
+    theList.append(firstVal);
+    theList.insertAfter(firstVal, secondVal);
+    expect(theList).toEqual({'head': {'next': {'next': null, 'vlaue': 'test1'}, 'vlaue': 'test2'}});
+  });
 });

@@ -13,11 +13,37 @@ Within the LinkedList class, include a head property, and there is a insert meth
 - LinkedList class: thats includes three methods.
 - insert method: for adds any value to the nodes
 - includes method: for like test if the value included in the node or not.
-- toString: is returns all values in Linked List as a string. 
+- toString method: is returns all values in Linked List as a string. 
 
 ### Big O:
 - Time O(1)
 - Space O(n)
 
 ### Solution
-![Linked List](../../assets/challenge4.png)
+![Linked List](../../assets/challenge5.png)
+
+---
+
+## Linked list Insertions
+> This code is Node class that has properties for the value insert after or before specific value or append new value in the end in the Node, and a pointer to the next Node.
+
+### Challenge
+Write the following methods for the Linked List class:
+.append(value) which adds a new node with the given value to the end of the list
+.insertBefore(value, newVal) which add a new node with the given newValue immediately before the first value node
+.insertAfter(value, newVal) which add a new node with the given newValue immediately after the first value node
+
+### Approach & Efficiency
+- I used classes, methods for the class, and while loop.
+
+### API  
+- append method: for adds a new node with the given value to the end of the list.
+- insertBefore method: for adds a new node with the given newValue immediately before the first value node.
+- insertAfter method: for adds a new node with the given newValue immediately after the first value node. 
+
+### Big O:
+- Time O(1)
+- Space O(n)
+
+### Solution
+![Linked List](../../assets/challenge6.png)
