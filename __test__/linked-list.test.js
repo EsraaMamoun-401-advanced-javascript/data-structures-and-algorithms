@@ -34,22 +34,22 @@ describe('Linked List Module', () => {
   let arrayToTestTypes = [1, 'any string', {}, true];
 
   arrayToTestTypes.forEach(value => {
-  
-    it(`toString() to make ${typeof(value)} as string`, () => {
+
+    it(`toString() to make ${typeof (value)} as string`, () => {
       let theList = new LinkedList;
       let val = value;
       theList.toString(val);
-      expect(typeof(theList.toString())).toEqual('string');
+      expect(typeof (theList.toString())).toEqual('string');
     });
 
   });
 
-  it(' append() to add new value in the end', () => {
+  it('append() to add new value in the end', () => {
     let theList = new LinkedList;
     let value = 'test';
     theList.append(value);
     theList.append(5);
-    expect(theList).toEqual({'head': {'next': {'next': null, 'vlaue': 5}, 'vlaue': 'test'}});
+    expect(theList).toEqual({ 'head': { 'next': { 'next': null, 'vlaue': 5 }, 'vlaue': 'test' } });
   });
 
   it('insertBefore() to insert new value before any value we target it', () => {
@@ -59,7 +59,7 @@ describe('Linked List Module', () => {
     theList.append(firstVal);
     theList.append(secondVal);
     theList.insertBefore(firstVal, secondVal);
-    expect(theList.head).toEqual({'next': {'next': null, 'vlaue': 'test2'}, 'vlaue': 'test1'});
+    expect(theList.head).toEqual({ 'next': { 'next': null, 'vlaue': 'test2' }, 'vlaue': 'test1' });
   });
 
   it('insertAfter() to insert new value after any value we target it', () => {
@@ -69,6 +69,31 @@ describe('Linked List Module', () => {
     theList.append(secondVal);
     theList.append(firstVal);
     theList.insertAfter(firstVal, secondVal);
-    expect(theList).toEqual({'head': {'next': {'next': null, 'vlaue': 'test1'}, 'vlaue': 'test2'}});
+    expect(theList).toEqual({ 'head': { 'next': { 'next': null, 'vlaue': 'test1' }, 'vlaue': 'test2' } });
+  });
+
+  it('kthFromEnd() Where k and the length of the list are the same', () => {
+    const theList = new LinkedList();
+    theList.append(10);
+    theList.append(9);
+    theList.append(8);
+    theList.append(7);
+
+    expect(theList.kthFromEnd(3)).toStrictEqual(theList.head.value);
+  });
+  it('kthFromEnd() Where k is not a positive integer', () => {
+    const theList = new LinkedList();
+    theList.append(10);
+    theList.append(9);
+    theList.append(8);
+    theList.append(7);
+
+    expect(theList.kthFromEnd(-1)).toStrictEqual('invalid value');
+  });
+
+  it('kthFromEnd() When the linked list is empty', () => {
+    const theList = new LinkedList();
+
+    expect(theList.kthFromEnd(2)).toStrictEqual('empty linked list');
   });
 });
