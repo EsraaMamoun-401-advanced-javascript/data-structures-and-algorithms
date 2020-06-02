@@ -8,5 +8,6 @@
 | Linked List | [class-05](challenges/linkedList) |
 | Linked List Insertions | [class-06](challenges/linkedList) |
 | Linked List k-th value | [class-07](challenges/linkedList) |
+| Linked Merge | [class-08](challenges/llMerge) |
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
