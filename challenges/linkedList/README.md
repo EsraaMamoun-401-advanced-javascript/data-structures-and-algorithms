@@ -17,7 +17,7 @@ Within the LinkedList class, include a head property, and there is a insert meth
 
 ### Big O:
 - Time O(1)
-- Space O(n)
+- Space O(1)
 
 ### Solution
 ![Linked List](../../assets/challenge5.png)
@@ -43,7 +43,28 @@ Write the following methods for the Linked List class:
 
 ### Big O:
 - Time O(1)
-- Space O(n)
+- Space O(1)
 
 ### Solution
 ![Linked List](../../assets/challenge6.png)
+
+---
+
+## Linked list k-th value
+> This code is Node class that has properties for the value that return the node’s value that is k from the end of the linked list.
+
+### Challenge
+Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+### Approach & Efficiency
+- I used classes, methods for the class, and while loop.
+
+### API  
+- kthFromEnd method: Return the node’s value that is k from the end of the linked list.
+
+### Big O:
+- Time O(1)
+- Space O(1)
+
+### Solution
+![Linked List](../../assets/challenge7.png)

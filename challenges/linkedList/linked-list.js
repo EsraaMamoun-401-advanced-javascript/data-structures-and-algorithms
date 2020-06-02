@@ -120,6 +120,35 @@ class LinkedList {
       }
     } 
   }
+
+  //===============New Code Challenge (CC- 07): Linked List k-th value===============//
+
+  kthFromEnd(k){
+    let counter = 0; 
+    if ((typeof(k) === 'number') && k>=0){
+      if (this.head){
+        counter ++;
+        let current = this.head;
+        let anotherCurrent = this.head;
+        while(current.next){
+          current = current.next;
+          counter++;
+        }
+        for (let i = 0; i<(counter-k-1); i++){
+          anotherCurrent = anotherCurrent.next;
+        }
+        if ((counter-k-1)<0){
+          return 'exception';
+        }
+        return anotherCurrent.value;
+  
+      } else {
+        return 'empty linked list';
+      }
+    } else {
+      return 'invalid value';
+    }
+  } 
 }
 
 module.exports = LinkedList;
