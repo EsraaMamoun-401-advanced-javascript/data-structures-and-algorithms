@@ -49,27 +49,30 @@ class Stack {
   }
 }
 
-let newStack = new Stack();
+// let newStack = new Stack();
 
-console.log('newStack isEmpty Before push: ', newStack.isEmpty());
+// console.log('newStack isEmpty Before push: ', newStack.isEmpty());
 
-newStack.push('Itachi');
-newStack.push('Gaara');
-newStack.push('Arame');
-newStack.push('Hesoka');
+// newStack.push('Itachi');
+// newStack.push('Gaara');
+// newStack.push('Arame');
+// newStack.push('Hesoka');
 
 
 
-console.log('newStack: ',newStack);
+// console.log('newStack: ',newStack);
 
-console.log('newStack Peek: ',newStack.peek());
+// console.log('newStack Peek: ',newStack.peek());
 
-console.log('newStack Pop: ',newStack.pop());
+// console.log('newStack Pop: ',newStack.pop());
 
-console.log('newStack After Pop: ',newStack);
+// console.log('newStack After Pop: ',newStack);
 
-console.log('newStack isEmpty after push: ', newStack.isEmpty());
+// console.log('newStack isEmpty after push: ', newStack.isEmpty());
 
+//================================================//
+//================================================//
+//================================================//
 
 class Queue {
   constructor() {
@@ -116,6 +119,20 @@ class Queue {
     return !this.front && !this.rear;
   }
 }
+
+let newQueue = new Queue();
+console.log('newQueue isEmpty Before push: ', newQueue.isEmpty());
+console.log('newQueue before enqueue: ', newQueue);
+newQueue.enqueue('Arame');
+newQueue.enqueue('Itachi');
+newQueue.enqueue('Gaara');
+newQueue.enqueue('Hesoka');
+
+console.log('newQueue after enqueue: ', newQueue);
+console.log('newQueue Peek: ',newQueue.peek());
+newQueue.dequeue();
+console.log('newQueue Peek after dequeue: ', newQueue.peek());
+
 
 module.exports = {
   Stack,
