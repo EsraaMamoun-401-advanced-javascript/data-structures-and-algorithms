@@ -23,8 +23,22 @@ Create a Queue class that has a front property. It creates an empty Queue when i
 - dequeue: a method which removes the node from the front of the queue, and returns the node’s value.
 
 ### Big O:
-- Time O(1)
-- Space O(n)
+
+> `- Time O(1)`
+
+> `- Space O(n)`
+
+**For both stack and queue**
+> Peek : O(1)
+> isEmpty : O(1)
+
+**Stack**
+> push: O(1)
+> pop: O(1)
+
+**Queue**
+> enqueue : O(1)
+> dequeue : O(1)
 
 ### Solution
 ![Linked List](../../assets/challenge10.png)
