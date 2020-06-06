@@ -29,16 +29,19 @@ Create a Queue class that has a front property. It creates an empty Queue when i
 > `- Space O(n)`
 
 **For both stack and queue**
-> Peek : O(1)
-> isEmpty : O(1)
+> - Peek : O(1)
+
+> - isEmpty : O(1)
 
 **Stack**
-> push: O(1)
-> pop: O(1)
+> - push: O(1)
+
+> - pop: O(1)
 
 **Queue**
-> enqueue : O(1)
-> dequeue : O(1)
+> - enqueue : O(1)
+
+> - dequeue : O(1)
 
 ### Solution
 ![Linked List](../../assets/challenge10.png)
