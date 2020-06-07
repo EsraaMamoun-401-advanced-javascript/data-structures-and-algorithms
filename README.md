@@ -10,5 +10,6 @@
 | Linked List k-th value | [class-07](challenges/linkedList) |
 | Linked Merge | [class-08](challenges/llMerge) |
 | stacks And Queues | [class-10](challenges/stacksAndQueues) |
+| Queue With Stacks | [class-11](challenges/queueWithStacks) |
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
