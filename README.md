@@ -12,5 +12,6 @@
 | stacks And Queues | [class-10](challenges/stacksAndQueues) |
 | Queue With Stacks | [class-11](challenges/queueWithStacks) |
 | multi Bracket Validation | [class-13](challenges/multiBracketValidation) |
+| Implementation Trees | [class-15](challenges/tree) |
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
