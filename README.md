@@ -14,5 +14,6 @@
 | Fifo Animal Shelter | [class-12](challenges/fifoAnimalShelter) |
 | multi Bracket Validation | [class-13](challenges/multiBracketValidation) |
 | Implementation Trees | [class-15](challenges/tree) |
+| Fizz Buzz Tree | [class-16](challenges/fizzBuzzTree) |
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
