@@ -17,5 +17,6 @@
 | Fizz Buzz Tree | [class-16](challenges/fizzBuzzTree) |
 | Breadth First | [class-17](challenges/BinaryTree) |
 | Find Maximum Value | [class-18](challenges/findMaximumValue) |
+| Odd Number BST | [class-19](challenges/oddNumBst) |
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
