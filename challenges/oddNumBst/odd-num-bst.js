@@ -1,25 +1,60 @@
 'use strict';
 
-// const BST = require('../tree/tree.js');
+class Node {
+  constructor(val) {
+    this.val = val;
+    this.left = null;
+    this.right = null;
+  }
+}
 
-// const newBST = BST.BST();
-// const newBT = BST.BT();
-// const newNode = BST.Node();
+class BinaryTree {
+  constructor() {
+    this.root = null;
+  }
 
-const oddNumBst = () => {
-    
-};
+  preOrder(root) {
+    let tempArr = [];
 
-// let root = new BST.Node(5);
-// root.left = new BST.Node(2);
-// root.right = new BST.Node(6);
-// root.left.left = new BST.Node(1);
-// root.left.right = new BST.Node(4);
-// root.left.right.left = new BST.Node(3);
-// root.right.right = new BST.Node(8);
-// root.right.right.right = new BST.Node(9);
-// root.right.right.left = new BST.Node(7);
+    tempArr.push(root.val);
 
-// console.log({root});
+    if (root.left) {
+      tempArr = [...tempArr, ...this.preOrder(root.left)];
+    }
 
-module.exports = oddNumBst;
+    if (root.right) {
+      tempArr = [...tempArr, ...this.preOrder(root.right)];
+    }
+    return tempArr;
+  }
+
+  oddNumBst(root) {
+    let values = this.preOrder(root);
+    let sumOdd = 0;
+
+    for (let i = 0; i < values.length; i++) {
+      if (values[i] % 2 !== 0) sumOdd += values[i];
+    }
+
+    console.log({sumOdd});
+
+    return sumOdd;
+  }
+
+}
+
+let tree = new BinaryTree();
+
+tree.root = new Node(1);
+tree.root.left = new Node(2);
+tree.root.right = new Node(3);
+tree.root.left.left = new Node(10);
+tree.root.left.right = new Node(5);
+tree.root.right.left = new Node(7);
+tree.root.right.right = new Node(4);
+
+console.log({tree});
+
+console.log('tree.oddNumBst(tree.root): ', tree.oddNumBst(tree.root));
+
+module.exports = {BinaryTree, Node};
