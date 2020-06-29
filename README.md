@@ -19,5 +19,7 @@
 | Find Maximum Value | [class-18](challenges/findMaximumValue) |
 | Odd Number BST | [class-19](challenges/oddNumBst) |
 | Insertion Sort | [class-26](challenges/insertionSort) |
+| Merge Sort | [class-27](challenges/mergeSort) |
+
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
