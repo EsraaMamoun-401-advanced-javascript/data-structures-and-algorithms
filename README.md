@@ -21,6 +21,7 @@
 | Insertion Sort | [class-26](challenges/insertionSort) |
 | Merge Sort | [class-27](challenges/mergeSort) |
 | Quick Sort | [class-28](challenges/quickSort) |
+| Hash Table | [class-30](challenges/hashtable) |
 
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
