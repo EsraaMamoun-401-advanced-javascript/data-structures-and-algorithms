@@ -18,6 +18,7 @@ class LinkedList {
 
     if (!this.head) {
       this.head = node;
+      return;
     }
 
     let currentNode = this.head;
@@ -29,6 +30,17 @@ class LinkedList {
     currentNode.next = node;
 
     return this;
+  }
+
+  values() {
+    // return values of nodes in linkedlist : values in array []
+    let values = [];
+    let current = this.head;
+    while (current) {
+      values.push(current.value);
+      current = current.next;
+    }
+    return values;
   }
 
   includes(value) {
