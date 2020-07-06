@@ -23,6 +23,7 @@
 | Quick Sort | [class-28](challenges/quickSort) |
 | Hash Table | [class-30](challenges/hashtable) |
 | Repeated Word | [class-31](challenges/repeatedWord) |
+| Tree Intersection | [class-32](challenges/treeIntersection) |
 
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
