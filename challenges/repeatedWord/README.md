@@ -12,9 +12,9 @@ Without utilizing any of the built-in library methods available to your language
 
 ### Big O:
 **In General:**
-Time: O(1), Space: O(n)
+Time: O(n), Space: O(n)
 
-- **repeatedWord**, Time: O(1), Space: O(n)
+- **repeatedWord**, Time: O(n) `Complexity is n. because the n is the size for the input.`, Space: O(n) `The amount of memory --> no need one extra character in memory.`
 
 ### Solution
 ![Repeated Words](../../assets/challenge31.png)
