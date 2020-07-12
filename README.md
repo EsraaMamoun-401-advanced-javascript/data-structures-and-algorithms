@@ -26,6 +26,7 @@
 | Tree Intersection | [class-32](challenges/treeIntersection) |
 | Left Join | [class-33](challenges/leftJoin) |
 | Left Join | [class-35](challenges/graph) |
+| Breadth First Graph | [class-35](challenges/breadthFirst) |
 
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
