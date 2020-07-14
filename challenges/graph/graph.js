@@ -44,47 +44,45 @@ class Graph {
   size() {
     return this.adjancyList.size;
   }
+
+  getEdge(list) {
+    let neighbors = this.getNeighbors(list[0]);
+    for (let i = 0; i < neighbors.length; i++) {
+      if (list[1] === neighbors[i].vertice) {
+        return `true, ${neighbors[i].weight}$`;
+      }
+      else return `false, 0$`;
+    }
+  }
+
 }
 
 
-// const graph = new Graph();
+const graph = new Graph();
 
-// const two = new Vertex(2);
-// const three = new Vertex(3);
-// const six = new Vertex(6);
-// const seven = new Vertex(7);
-// const eight = new Vertex(8);
-// const ten = new Vertex(10);
+const two = new Vertex(2);
+const three = new Vertex(3);
+const six = new Vertex(6);
+const seven = new Vertex(7);
+const eight = new Vertex(8);
+const ten = new Vertex(10);
 
-// graph.addNode(two);
-// graph.addNode(three);
-// graph.addNode(six);
-// graph.addNode(seven);
-// graph.addNode(eight);
-// graph.addNode(ten);
+graph.addNode(two);
+graph.addNode(three);
+graph.addNode(six);
+graph.addNode(seven);
+graph.addNode(eight);
+graph.addNode(ten);
 
-// graph.addEdge(two, seven);
-// graph.addEdge(three, eight);
-// graph.addEdge(six, seven);
-// graph.addEdge(six, eight);
-// graph.addEdge(ten, two);
-// graph.addEdge(ten, three);
-// graph.addEdge(ten, six);
-// graph.addEdge(eight, seven);
+graph.addEdge(three, eight, 5);
+graph.addEdge(six, seven, 4);
+graph.addEdge(six, eight, 2);
+graph.addEdge(ten, two, 8);
+graph.addEdge(ten, three, 4);
+graph.addEdge(ten, six, 7);
+graph.addEdge(eight, seven, 1);
 
-// console.log('graph: ', graph);
-// console.log('==================================================');
-
-// console.log('graph.size(): ', graph.size());
-
-// console.log('==================================================');
-// console.log('graph.getNeighbors(ten): ', graph.getNeighbors(ten));
-
-// console.log('==================================================');
-// console.log('graph.getNodes(): ', graph.getNodes());
-
-// console.log('==================================================');
-// console.log('graph.getNeighbors(ten): ', graph.getNeighbors(ten));
+console.log(graph.getEdge([three, two]));
 
 module.exports = {
   Graph,
