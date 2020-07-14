@@ -25,10 +25,10 @@
 | Repeated Word | [class-31](challenges/repeatedWord) |
 | Tree Intersection | [class-32](challenges/treeIntersection) |
 | Left Join | [class-33](challenges/leftJoin) |
-| Left Join | [class-35](challenges/graph) |
+| Graph | [class-35](challenges/graph) |
 | Breadth First Graph | [class-36](challenges/breadthFirst) |
+| Get Edge| [class-37](challenges/graph) |
 | Depth First | [class-38](challenges/depthFirst) |
-
 
 
 - [ci/cd](https://github.com/EsraaMamoun-401-advanced-javascript/data-structures-and-algorithms/actions) (GitHub Actions)
