@@ -22,3 +22,24 @@ Space O(n) ==> for **addNode()** and **addEdge()** because they take space in me
 
 ### Solution
 ![Graph](../../assets/challenge35.png)
+
+
+
+-----------------------------------------
+
+
+
+## Get Edge
+
+### Challenge
+- Write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
+
+### Approach & Efficiency
+- I used function, for loop, if statements, and while loop.
+
+### Big O:
+**In General:**
+getEdge ==> Time: O(n) becuse there is for loop, Space: O(1) becuse I have decleare a new veriable.
+
+### Solution
+![Get Edge](../../assets/challenge37.png)
